@@ -1,0 +1,75 @@
+/* src/ChipComponent.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+}
+.chip-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 600px; /* Or any other value */
+  width: 100%;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.chip {
+  display: flex;
+  flex-direction: column; /* Add this line */
+  align-items: center;
+  /* Other styles... */
+
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chip button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.item-list li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.item-list li:hover {
+  background-color: #f2f2f2;
+}
+.highlighted {
+  background-color: purple; /* Or any other highlight color */
+}
+.chip-email {
+  font-size: 0.8em; /* Smaller font size */
+  color: #666; /* Gray color */
+}
